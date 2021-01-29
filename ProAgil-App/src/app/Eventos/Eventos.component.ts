@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Console } from 'console';
 
 @Component({
   selector: 'app-Eventos',
@@ -9,12 +8,12 @@ import { Console } from 'console';
 })
 export class EventosComponent implements OnInit {
 
-
-  ];
+  eventos: any;
 
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.getEventos();
   }
 
   getEventos()
