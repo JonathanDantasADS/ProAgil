@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/ProAgil-App'),
+      dir: require('path').join(__dirname, './coverage/ProAgil-APP'),
       subdir: '.',
       reporters: [
         { type: 'html' },
